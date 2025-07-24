@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Con Amor</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="stilos2.css">
+  </head>
+<body class="flex flex-col items-center justify-center min-h-screen p-6 text-center">
+  
+  <div class="space-y-6 max-w-2xl">
+    <p class="text-xl text-pink-800 linea">Hola mi Niña, hice esta página para decirte que te AMO y te extraño</p>
+    <p class="text-xl text-pink-800 linea">Se que estos días distanciados han sido duros(para mi si lo han sido)</p>
+    <p class="text-xl text-pink-800 linea">y que a veces me comporto como si todo me diera igual pero no es así</p>
+    <p class="text-xl text-pink-800 linea">a cada momento te tengo presente mi Niña y creo que ya tendremos oprtunidad</p>
+    <p class="text-xl text-pink-800 linea">de hablarlo en persona. Solo queria decirte que extraño todo de ti </p>
+    <p class="text-xl text-pink-800 linea">tus risas, tus abrazos, tus besos y tu forma de ser(renegona jajaja) 💕</p>
+    <p class="text-xl text-pink-800 linea">Eres mi alegría constante y mi persona favorita y</p>
+    <p class="text-xl text-pink-800 linea">No importa lo que pase, siempre estarás en mi corazón.</p>
+    
+    <div class="te-amo mt-8">TE AMO MI NIÑA ❤️</div>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-12">
+    <img src="WhatsApp Image 2025-07-24 at 5.04.53 PM.jpeg" alt="amor1" class="rounded-xl shadow-xl w-64 h-64 object-cover imagen-romantica">
+    <img src="WhatsApp Image 2025-07-24 at 5.03.36 PM (1).jpeg" alt="amor1" class="rounded-xl shadow-xl w-64 h-64 object-cover imagen-romantica">
+    <img src="WhatsApp Image 2025-07-24 at 5.03.36 PM.jpeg" alt="amor2" class="rounded-xl shadow-xl w-64 h-64 object-cover imagen-romantica">
+    <img src="WhatsApp Image 2025-07-24 at 5.03.35 PM (1).jpeg" alt="amor2" class="rounded-xl shadow-xl w-64 h-64 object-cover imagen-romantica">
+    <img src="WhatsApp Image 2025-07-24 at 5.03.35 PM.jpeg" alt="amor3" class="rounded-xl shadow-xl w-64 h-64 object-cover imagen-romantica">
+    <img src="WhatsApp Image 2025-07-24 at 5.03.33 PM.jpeg" alt="amor3" class="rounded-xl shadow-xl w-64 h-64 object-cover imagen-romantica">
+  </div>
+
+  <!-- Botón de música -->
+<div class="mt-12 flex justify-center">
+  <button onclick="toggleMusic()" id="btnMusica"
+    class="bg-pink-600 text-white px-6 py-3 rounded-full shadow-md hover:bg-pink-700 transition">
+    🎵 Reproducir música
+  </button>
+</div>
+
+<!-- Audio oculto -->
+<audio id="musica" loop>
+  <source src="Camila — Todo Cambió [Letra] (mp3cut.net).mp3" type="audio/mp3">
+  Tu navegador no soporta audio HTML5.
+</audio>
+
+<script>
+  let reproduciendo = false;
+
+  function toggleMusic() {
+    const audio = document.getElementById("musica");
+    const btn = document.getElementById("btnMusica");
+
+    if (!reproduciendo) {
+      audio.play();
+      btn.innerText = "⏸️ Pausar música";
+    } else {
+      audio.pause();
+      btn.innerText = "🎵 Reproducir música";
+    }
+
+    reproduciendo = !reproduciendo;
+  }
+</script>
+
+</body>
+</html>

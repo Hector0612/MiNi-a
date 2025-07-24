@@ -1,0 +1,54 @@
+body {
+      background: linear-gradient(to right, #ffe4e6, #fbcfe8);
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    .linea {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: aparecer 1s forwards;
+    }
+
+    .linea:nth-child(1) { animation-delay: 0.5s; }
+    .linea:nth-child(2) { animation-delay: 2s; }
+    .linea:nth-child(3) { animation-delay: 3.5s; }
+    .linea:nth-child(4) { animation-delay: 5s; }
+    .linea:nth-child(5) { animation-delay: 6.5s; }
+    .linea:nth-child(6) { animation-delay: 8s; }
+    .linea:nth-child(7) { animation-delay: 9.5s; }
+    .linea:nth-child(8) { animation-delay: 11s; }
+
+
+
+    @keyframes aparecer {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .te-amo {
+      font-size: 3rem;
+      font-weight: bold;
+      color: #be123c;
+      animation: zoomIn 2s ease-in-out;
+    }
+
+    @keyframes zoomIn {
+      from {
+        transform: scale(0.2);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .imagen-romantica {
+      transition: transform 0.4s ease;
+    }
+
+    .imagen-romantica:hover {
+      transform: scale(1.05);
+    }
